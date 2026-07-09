@@ -37,7 +37,7 @@ describe('Customer Database Schema', () => {
 
   it('should have correct schema structure', () => {
     expect(schema.customers).toBeDefined();
-    const columns = schema.customers.column;
+    const columns = schema.customers;
     expect(columns.id).toBeDefined();
     expect(columns.name).toBeDefined();
     expect(columns.email).toBeDefined();
