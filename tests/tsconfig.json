@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    // Override rootDir to allow test files outside src/
+    "rootDir": "..",
+    // Don't emit test files to dist
+    "noEmit": true,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["./**/*.ts"]
+}

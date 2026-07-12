@@ -30,8 +30,10 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
       - run: npm test
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/automateagency_crm_test
+
 
 
